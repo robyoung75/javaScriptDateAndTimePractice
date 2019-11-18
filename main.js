@@ -4,23 +4,23 @@ var now = new Date();//creates a new date object and assigns to now.
 console.log(now);//logs 2019-11-16T03:57:01.432Z
 var theDay = now.getDay(); //extracts the day from the date object now and assigns to theDay as an index number
 var nameOfDay = days[theDay];//assigns theDay number to days index resulting in name of the day of the week.
-//console.log(nameOfDay);//logs Sun (created on sunday, will change with actual days)
+console.log(nameOfDay);//logs Sun (created on sunday, will change with actual days)
 
 var rightNow = new Date();//creates a new date object.
 rightNow = rightNow.toDateString(); //converts rightNow to a date string.
-//console.log(rightNow);//logs Sun Nov 17 2019
+console.log(rightNow);//logs Sun Nov 17 2019
 
 
 var dateString = new Date().toString();//creates a date object and converts to a string assinged to dateString
-//console.log(dateString);//logs Sun Nov 17 2019 18:38:12 GMT-0700 (Mountain Standard Time)
+console.log(dateString);//logs Sun Nov 17 2019 18:38:12 GMT-0700 (Mountain Standard Time)
 
 
 var date = new Date().toDateString();
-//console.log(date);//logs Sun Nov 17 2019
+console.log(date);//logs Sun Nov 17 2019
 
 var date = new Date();
 var secsSince = date.getTime() / 1000;
-//console.log(secsSince);
+console.log(secsSince);
 
 //Extracting parts of the date and time
 var dateObject = new Date();
@@ -41,12 +41,14 @@ console.log(milliSec);//logs milliseconds indexed 0 - 999
 var time = dateObject.getTime();
 console.log(time);//logs milliseconds since midnight, jan 1, 1970
 
-
+//assing month name from date object
 var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
 var dateO = new Date();//new date object
 var monthNum = dateO.getMonth();//month assigned to monthNum 0 - 11
 var monthName = month[monthNum];//month array assigned month number assigning monthName from array
-//console.log(monthName);
+console.log(monthName);
+
+
 
 
 
