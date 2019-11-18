@@ -41,13 +41,26 @@ console.log(milliSec);//logs milliseconds indexed 0 - 999
 var time = dateObject.getTime();
 console.log(time);//logs milliseconds since midnight, jan 1, 1970
 
-//assing month name from date object
+//assigns month name from date object
 var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
 var dateO = new Date();//new date object
 var monthNum = dateO.getMonth();//month assigned to monthNum 0 - 11
 var monthName = month[monthNum];//month array assigned month number assigning monthName from array
 console.log(monthName);
 
+//determine days since your birthday
+var today = new Date();
+var birthday = new Date("September 4, 1975");
+var milliSecToday = today.getTime();
+var milliSecBDay = birthday.getTime();
+var milliSecDif = milliSecToday - milliSecBDay;
+var dayDif = milliSecDif / (1000 * 60 * 60 * 24);
+console.log(Math.floor(dayDif));
+
+//determine days since birthday production code.
+var bDayDiff = new Date().getTime() - new Date("September 4, 1975");
+var daysSinceBirthday = Math.floor(bDayDiff / (1000 * 60 * 60 * 24));
+console.log(daysSinceBirthday);
 
 
 
