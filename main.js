@@ -62,6 +62,7 @@ var bDayDiff = new Date().getTime() - new Date("September 4, 1975");
 var daysSinceBirthday = Math.floor(bDayDiff / (1000 * 60 * 60 * 24));
 console.log(daysSinceBirthday);
 
-
-
-
+//determines days since nove 17 to present and rounds down.
+var date = new Date("November 17, 2019").getTime();
+var today = new Date().getTime();
+console.log(Math.floor((today / (1000 * 60 * 60 * 24)) - (date / (1000 * 60 * 60 * 24))));
