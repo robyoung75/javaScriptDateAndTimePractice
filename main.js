@@ -66,3 +66,8 @@ console.log(daysSinceBirthday);
 var date = new Date("November 17, 2019").getTime();
 var today = new Date().getTime();
 console.log(Math.floor((today / (1000 * 60 * 60 * 24)) - (date / (1000 * 60 * 60 * 24))));
+
+
+var date = new Date("January 2, 1970").getTime();
+console.log(date);//logs milliseconds since January 1, 1970
+console.log(Math.floor(date / (1000 * 60 * 60 * 24)));//logs days since January 1 1970
