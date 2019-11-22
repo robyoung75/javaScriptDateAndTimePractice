@@ -71,3 +71,18 @@ console.log(Math.floor((today / (1000 * 60 * 60 * 24)) - (date / (1000 * 60 * 60
 var date = new Date("January 2, 1970").getTime();
 console.log(date);//logs milliseconds since January 1, 1970
 console.log(Math.floor(date / (1000 * 60 * 60 * 24)));//logs days since January 1 1970
+
+var nowDate = new Date();//sets new date object 
+console.log(nowDate);//logs 2019-11-22T03:21:00.011Z
+var nowHours = nowDate.getHours();
+console.log(nowHours); //logs 20
+nowDate.setHours(nowHours + 1);
+console.log(nowDate);////logs 2019-11-22T04:21:00.011Z
+
+//find out what day you wer born on.
+var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",];
+var bDay = new Date("September 4, 1975");
+var day = bDay.getDay();
+console.log(day);
+console.log(days[day]);
+
